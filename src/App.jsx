@@ -1,9 +1,19 @@
-
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import TextForm from "./components/TextForm";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Router>
+        <div className="h-screen dark:bg-slate-800">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<TextForm />} />
+          {/* <Route path="/about" element={<About />} /> */}
+        </Routes>
+        </div>
+      </Router>
     </>
   );
 }
