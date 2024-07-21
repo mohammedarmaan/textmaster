@@ -35,6 +35,9 @@ const Navbar = () => {
           <Link to="/about" className="text-gray-800 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white">
             About
           </Link>
+          <Link to="/image-to-text" className="text-gray-800 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white">
+            Text from Image
+          </Link>
         </div>
         <div className="flex items-center">
           <Switch

@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import TextForm from "./components/TextForm";
+import ImageUploader from "./components/ImageUploader";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<TextForm />} />
+          <Route path="/image-to-text" element={<ImageUploader />} />
           {/* <Route path="/about" element={<About />} /> */}
         </Routes>
         </div>
