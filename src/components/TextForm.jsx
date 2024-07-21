@@ -36,15 +36,15 @@ const TextForm = () => {
   };
 
   return (
-    <div className="container dark:bg-slate-800 mx-auto mt-5 p-5 ">
+    <div className="container  mx-auto mt-5 p-5 ">
       <div className="mb-3">
         <motion.h4
           initial={{ opacity: 0 }}
           animate={{ opacity: 1}}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-2xl font-bold text-center mb-5"
+          className="text-2xl font-bold mb-5 text-tm-900 dark:text-white"
         >
-          TextForm
+          Enter Text here
         </motion.h4>
 
         <motion.textarea
@@ -67,8 +67,9 @@ const TextForm = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="bg-blue-500 text-white py-2 px-4 rounded"
+          className="bg-blue-800 dark:bg-black text-white py-2 px-4 rounded"
           onClick={handleUpClick}
+          
         >
           Convert to Uppercase
         </motion.button>
@@ -78,7 +79,7 @@ const TextForm = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="bg-blue-500 text-white py-2 px-4 rounded"
+          className="bg-blue-800 dark:bg-black text-white py-2 px-4 rounded"
           onClick={handleLoClick}
         >
           Convert to Lowercase
@@ -89,7 +90,7 @@ const TextForm = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="bg-blue-500 text-white py-2 px-4 rounded"
+          className="bg-blue-800 dark:bg-black text-white py-2 px-4 rounded"
           onClick={removeExtraSpaces}
         >
           Remove Extra Spaces
@@ -100,7 +101,7 @@ const TextForm = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
-          className="bg-blue-500 dark:bg-black text-white py-2 px-4 rounded"
+          className="bg-blue-800 dark:bg-tm-400 text-white py-2 px-4 rounded"
           onClick={handleCopy}
         >
           Copy Text
@@ -113,7 +114,7 @@ const TextForm = () => {
           transition={{ delay: 0.8 }}
           className="bg-red-500 text-white py-2 px-4 rounded"
           onClick={handleCTClick}
-        >
+        > 
           Clear Text
         </motion.button>
       </div>
@@ -123,7 +124,7 @@ const TextForm = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="text-xl font-bold"
+          className="text-xl font-bold dark:text-white text-tm-900"
         >
           Text Summary
         </motion.h4>
@@ -131,7 +132,7 @@ const TextForm = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="mt-2"
+          className="mt-2 dark:text-white"
         >
           {text.split(/\s+/).filter((word) => word.length > 0).length} words and{" "}
           {text.replace(/\s/g, "").length} characters
@@ -143,11 +144,11 @@ const TextForm = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.9 }}
-          className="text-xl font-bold"
+          className="text-xl font-bold dark:text-white text-tm-900"
         >
           Preview
         </motion.h4>
-        <p className="mt-2">
+        <p className="mt-2 dark:text-white">
           {text === "" ? "Enter text to preview" : text}
         </p>
       </div>

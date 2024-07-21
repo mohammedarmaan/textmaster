@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="h-screen dark:bg-slate-800">
+        <div className="h-screen bg-blue-200 dark:bg-slate-800">
         <Navbar />
         <Routes>
           <Route path="/" element={<TextForm />} />
