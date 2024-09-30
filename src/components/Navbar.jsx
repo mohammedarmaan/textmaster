@@ -29,7 +29,7 @@ const Navbar = () => {
           <Link to='/' className=" text-2xl  text-gray-800 dark:text-white">
             TextMaster
           </Link>
-          <Link to="/home" className="text-gray-800 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white">
+          {/* <Link to="/home" className="text-gray-800 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white">
             Home
           </Link>
           <Link to="/about" className="text-gray-800 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white">
@@ -37,7 +37,7 @@ const Navbar = () => {
           </Link>
           <Link to="/image-to-text" className="text-gray-800 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white">
             Text from Image
-          </Link>
+          </Link> */}
         </div>
         <div className="flex items-center">
           <Switch
